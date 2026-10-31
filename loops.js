@@ -6,7 +6,7 @@
 
 const SITE = {
   email: "leo.thewildloop@gmail.com",
-  whatsapp: "", // digits with country code, no plus. Empty hides the WhatsApp buttons.
+  whatsapp: "60132903570", // digits with country code, no plus. Empty hides the WhatsApp buttons.
   instagram: "", // handle without @
   tiktok: "" // handle without @
 };
