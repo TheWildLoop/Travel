@@ -54,6 +54,12 @@ const LOOPS = [
       plan: ["Medan to Bukit Lawang", "Orangutan jungle trek and river tubing", "Village tour by motorbike or becak", "Tangkahan elephants and hot springs", "Drive to Berastagi, fruit and flower market, Gundaling lookout", "Sibayak volcano sunrise hike, Sipiso-piso waterfall, ferry to Samosir", "Samosir Batak village, then back to Medan"],
       route: [[3.59, 98.67, "Medan"], [3.55, 98.11, "Bukit Lawang"], [3.69, 98.07, "Tangkahan"], [3.19, 98.51, "Berastagi"], [2.92, 98.52, "Sipiso-piso waterfall"], [2.67, 98.87, "Samosir, Lake Toba"]]
     }),
+    trip("sumatra-north-14", "North, snorkeling and jungle", {
+      days: 14, options: RIDES,
+      pitch: "14 days, 13 nights. Snorkeling, jungle exploration and Lake Toba.",
+      plan: ["Medan, Berastagi market and Mount Sibayak", "Lake Toba", "Sidikalang and Kedabuhen waterfall", "Singkil crocodile swamp", "Pulau Besar snorkeling", "Ketambe jungle", "Sinabung hike, Telagah Sei Bingai, Batu Katak, then back to Medan"],
+      route: [[3.59, 98.67, "Medan"], [3.19, 98.51, "Berastagi"], [3.23, 98.51, "Mount Sibayak"], [2.67, 98.87, "Lake Toba"], [2.75, 98.32, "Sidikalang"], [2.65, 98.15, "Kedabuhen waterfall"], [2.29, 97.8, "Singkil"], [2.22, 97.35, "Pulau Besar"], [3.69, 97.65, "Ketambe"], [3.17, 98.39, "Mount Sinabung"], [3.46, 98.3, "Telagah Sei Bingai"], [3.55, 98.13, "Batu Katak"], [3.59, 98.67, "Medan"]]
+    }),
     trip("sumatra-south", "South", {
       days: 7, options: RIDES,
       plan: ["Palembang, Ampera Bridge and Pasar 16 Ilir market", "Musi River boat trip", "Travel to Pagar Alam", "Pagar Alam highlands and tea plantations", "Travel to Lake Ranau", "Lake Ranau and lakeside villages", "Return to Palembang"],
