@@ -105,6 +105,20 @@ const LOOPS = [
       route: [[-0.88, 131.26, "Sorong"], [-0.43, 130.82, "Waisai"], [-0.57, 130.57, "Arborek"], [-0.55, 130.69, "Kri"], [-0.55, 130.25, "Piaynemo"], [0.17, 130.03, "Wayag"]]
     })
   ] },
+  { id: "borneo", name: "Borneo", lat: 3.7, lng: 114.2, trips: [
+    trip("borneo-sarawak-sabah", "Sarawak and Sabah", {
+      days: 14, photos: 15, video: true, months: "Mar to Oct",
+      when: [
+        ["Mar to Oct", "Drier months", "Less rain on the Bako trails and along the Kinabatangan. November to February is the wettest time."],
+        ["30 to 31 May", "Kaamatan", "Sabah's harvest festival runs through May and ends with the state celebration at Hongkod Koisaan in Penampang, near Kota Kinabalu."],
+        ["1 to 2 Jun", "Gawai Dayak", "Sarawak's harvest festival. Longhouse families open their doors for food, rice wine and dancing."],
+        ["Jun or Jul, varies", "Rainforest World Music Festival", "Three days of music at the Sarawak Cultural Village in Santubong. The dates move every year, so check before you book."]
+      ],
+      pitch: "14 days, 13 nights. Bako's sea stacks and proboscis monkeys, orangutans and sun bears in Sepilok, and the Kinabatangan River by boat.",
+      plan: ["Arrive in Kuching, the waterfront and the cat statues", "Santubong: jungle trail, then a boat trip on the river mouth", "Kuching Chinatown and the Harmony Arch, the Tua Pek Kong temple lit up at night", "Boat to Bako National Park, bearded pigs by the beach, night walk for frogs and stick insects", "Bako at low tide: proboscis monkeys and silvered langurs, sea stacks and rock pools, then the boat back to Kuching", "Fly to Sandakan", "Sepilok: orangutan feeding and the Bornean Sun Bear Conservation Centre", "Gomantong Caves, then the Kinabatangan River: sunset cruise and night prawn fishing", "Kinabatangan: morning cruise for crocodiles and hornbills, night cruise for kingfishers", "Kinabatangan: jungle walk and monitor lizards, sunset cruise", "Limestone cave hike near Sukau", "Back to Sandakan", "Rainforest Discovery Centre in Sepilok: giant trees and the lily lake", "Sandakan, then depart"],
+      route: [[1.56, 110.35, "Kuching"], [1.76, 110.33, "Santubong"], [1.72, 110.44, "Bako National Park"], [5.84, 118.12, "Sandakan"], [5.86, 117.95, "Sepilok"], [5.53, 118.07, "Gomantong Caves"], [5.52, 118.29, "Sukau, Kinabatangan River"], [5.88, 117.94, "Rainforest Discovery Centre"], [5.84, 118.12, "Sandakan"]]
+    })
+  ] },
   // Hidden until you give them days above 0.
   { id: "nusa-penida", name: "Nusa Penida", lat: -8.73, lng: 115.54, trips: [trip("nusa-penida")] },
   { id: "bali", name: "Bali", lat: -8.34, lng: 115.09, trips: [trip("bali-north", "North"), trip("bali-south", "South")] },
