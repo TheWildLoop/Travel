@@ -27,14 +27,17 @@ a { color: inherit; }
 /* hero: the line is a real trip, drawn from its stops in loops.js */
 .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; padding: 6rem var(--pad) var(--pad); background: var(--jungle); color: var(--mist); overflow: hidden; }
 .hero .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
-.hero-route { position: absolute; top: 3rem; right: calc(var(--pad) - 1rem); width: min(92vw, 46rem); }
-@media (min-width: 48rem) { .hero-route { width: min(50vw, 70svh); } }
-@media (max-width: 47.99rem) { .hero { padding-bottom: 5.5rem; } } /* clears the floating WhatsApp button */
-.hero-route path { fill: none; stroke: var(--sulfur); stroke-width: 0.8; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.6s 0.3s ease-in-out forwards; }
-.hero-route circle { fill: var(--jungle); stroke: var(--sulfur); stroke-width: 0.45; }
+.hero-in { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: clamp(1rem, 5vw, 4rem); width: 100%; }
+.hero-in > p { grid-column: 1 / -1; }
+.word { font-weight: 800; font-stretch: 75%; letter-spacing: -0.02em; line-height: 0.8; font-size: clamp(5rem, min(27vw, 26svh), 17rem); margin-bottom: 1.5rem; }
+/* the route sits beside the wordmark at its exact height, never over the text */
+.hero-art { position: relative; margin-bottom: 1.5rem; }
+.hero-route { position: absolute; top: 0; right: 0; height: 100%; aspect-ratio: 1; max-width: 100%; }
+.hero-route path { fill: none; stroke: var(--sulfur); stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.6s 0.3s ease-in-out forwards; }
+.hero-route circle { fill: var(--jungle); stroke: var(--sulfur); stroke-width: 0.5; }
 @keyframes draw { to { stroke-dashoffset: 0; } }
-.hero-in { position: relative; }
-.word { font-weight: 800; font-stretch: 75%; letter-spacing: -0.02em; line-height: 0.8; font-size: clamp(6rem, 27vw, 17rem); margin-bottom: 1.5rem; }
+@media (max-width: 40rem) { .hero-route path { stroke-width: 1.6; } .hero-route circle { stroke-width: 0.9; } } /* small drawing, thicker line */
+@media (max-width: 47.99rem) { .hero { padding-bottom: 5.5rem; } } /* clears the floating WhatsApp button */
 .word span { display: block; }
 .word .the { font-size: 0.45em; line-height: 1; }
 .lead { max-width: 34rem; font-size: 1.25rem; margin-bottom: 1.5rem; }

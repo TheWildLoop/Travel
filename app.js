@@ -28,7 +28,7 @@ function sketch(route, cls) {
 /* hero: trace the trip with the most stops */
 const star = TRIPS.reduce((a, t) => t.route.length > a.route.length ? t : a, TRIPS[0]);
 if (star) {
-  $(".hero .bg").insertAdjacentHTML("afterend", sketch(star.route, "hero-route"));
+  $(".word").insertAdjacentHTML("afterend", `<div class="hero-art">${sketch(star.route, "hero-route")}</div>`);
   $("#traced").innerHTML = `The yellow line is a real loop: <a href="#${star.id}">${esc(label(star))}, ${star.days} days</a>`;
 }
 
