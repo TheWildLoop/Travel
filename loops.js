@@ -105,10 +105,10 @@ const LOOPS = [
       route: [[-0.88, 131.26, "Sorong"], [-0.43, 130.82, "Waisai"], [-0.57, 130.57, "Arborek"], [-0.55, 130.69, "Kri"], [-0.55, 130.25, "Piaynemo"], [0.17, 130.03, "Wayag"]]
     })
   ] },
-  // Borneo is hidden until its photos are picked: set days back to 14 to show it.
+  // Borneo shows only its reel until its photos are picked.
   { id: "borneo", name: "Borneo", lat: 3.7, lng: 114.2, trips: [
     trip("borneo-sarawak-sabah", "Sarawak and Sabah", {
-      days: 0, photos: 15, video: true, months: "Mar to Oct",
+      days: 14, photos: 0, video: true, months: "Mar to Oct",
       when: [
         ["Mar to Oct", "Drier months", "Less rain on the Bako trails and along the Kinabatangan. November to February is the wettest time."],
         ["30 to 31 May", "Kaamatan", "Sabah's harvest festival runs through May and ends with the state celebration at Hongkod Koisaan in Penampang, near Kota Kinabalu."],
