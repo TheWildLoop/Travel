@@ -82,5 +82,6 @@ const LOOPS = [
 
 // One line per guide: copy the example below and remove the //. Photo path example: img/guides/name.webp. Empty list hides the section.
 const GUIDES = [
+  { name: "Tessa", languages: "", bio: "Tessa is from Lombok and has spent years exploring alone on her Honda Beat. Tonight she might book you the best table in town. Tomorrow you could be eating at a street stall with zero online reviews, and she'll swear it beats the restaurant. A whole day lying in the sun on the beach suits her fine, and the next morning she'll drag you off on something properly wild. She travels for the people she meets and the wildlife she finds.", photo: "img/guides/tessa.jpg" },
   // { name: "Guide name", languages: "", bio: "Two lines about this guide.", photo: "" }
 ];
