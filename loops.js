@@ -76,7 +76,7 @@ const LOOPS = [
       route: [[3.59, 98.67, "Medan"], [3.55, 98.11, "Bukit Lawang"], [3.69, 98.07, "Tangkahan"], [3.19, 98.51, "Berastagi"], [2.92, 98.52, "Sipiso-piso waterfall"], [2.67, 98.87, "Samosir, Lake Toba"]]
     }),
     trip("sumatra-north-14", "North, snorkeling and jungle", {
-      days: 14, months: "May to Aug", options: RIDES,
+      days: 14, photos: 16, months: "May to Aug", options: RIDES,
       when: [["May to Aug", "Calm seas", "Sunny, calm weather in the Banyak Islands for snorkeling and island hopping, and drier trails at Ketambe."], ...TOBA_WHEN],
       pitch: "14 days, 13 nights. Snorkeling, jungle exploration and Lake Toba.",
       plan: ["Arrive in Medan, drive up to Berastagi", "Mount Sibayak sunrise hike, then Berastagi market", "Drive to Lake Toba, afternoon by the water", "Sidikalang and Kedabuhen waterfall", "Drive to Singkil", "Crocodile swamp by boat, then cross to Pulau Besar", "Snorkeling around Pulau Besar", "Island hopping in the Banyak Islands", "Boat back to Singkil, start the long drive inland", "Arrive in Ketambe", "Jungle trek in Ketambe", "Drive to the Karo highlands, Sinabung viewpoint hike outside the volcano's closed zone", "Telagah Sei Bingai", "Batu Katak, then back to Medan"],
