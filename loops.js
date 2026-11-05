@@ -80,7 +80,7 @@ const LOOPS = [
   { id: "java", name: "Java", lat: -7.5, lng: 110.5, trips: [trip("java-east", "East"), trip("java-west", "West")] }
 ];
 
-// Replace the placeholder. Photo path example: img/guides/name.webp. Empty list hides the section.
+// One line per guide: copy the example below and remove the //. Photo path example: img/guides/name.webp. Empty list hides the section.
 const GUIDES = [
-  { name: "Guide name", languages: "", bio: "Two lines about this guide.", photo: "" }
+  // { name: "Guide name", languages: "", bio: "Two lines about this guide.", photo: "" }
 ];
