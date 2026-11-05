@@ -97,6 +97,7 @@ function openTrip(id) {
     ${t.pitch ? `<p>${esc(t.pitch)}</p>` : ""}
     ${t.youtube ? `<iframe src="https://www.youtube-nocookie.com/embed/${esc(t.youtube)}" title="${esc(name)} video" loading="lazy" allowfullscreen></iframe>` : ""}
     ${t.plan.length ? `<ol class="plan">${t.plan.map((d, i) => `<li><b>Day ${i + 1}</b>${esc(d)}</li>`).join("")}</ol>` : ""}
+    ${t.when.length ? `<p><b>When to go</b><br>Tap a date to ask about it.</p><ul class="when">${t.when.map(([m, what, why]) => `<li><a href="${esc(ask(name, `${m} (${what})`))}" target="_blank" rel="noopener"><b>${esc(m)}</b><span>${esc(what)}</span><small>${esc(why)}</small></a></li>`).join("")}</ul>` : ""}
     ${t.options.length ? `<p><b>Choose how you travel</b></p><div class="opts">${t.options.map(o => `<a class="btn ghost" href="${esc(ask(name, o))}" target="_blank" rel="noopener">${esc(o)}</a>`).join("")}</div>` : ""}
     <a class="btn" href="${link || `mailto:${SITE.email}?subject=${encodeURIComponent(name)}`}" target="_blank" rel="noopener">${link ? "Ask about this loop on WhatsApp" : "Ask about this loop by email"}</a>`;
   dlg.showModal();
