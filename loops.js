@@ -2,6 +2,7 @@
 // A trip shows on the site and the map only when days is above 0. Islands with no live trip stay hidden.
 // Photos: set photos to how many you have. Name the files img/<island id>/<trip id>-01.webp, -02.webp ...
 // Example: img/lombok/lombok-highlights-01.webp
+// Video: set video: true and put a vertical clip at img/<island id>/<trip id>.mp4. It plays first in the photo strip.
 // route: stops in driving order as [latitude, longitude, "name"]. Pins are approximate, check them on the map.
 // options: ways to travel. The visitor taps one and it goes into the WhatsApp or email message.
 // months: the best window, shown on the trip tile. when: recommended dates as ["months", "what's on", "why go then"]; the visitor taps one to ask about it.
@@ -14,7 +15,7 @@ const SITE = {
 };
 
 const trip = (id, name = "", extra = {}) => ({
-  id, name, days: 0, price: "", months: "", photos: 0, youtube: "", pitch: "", plan: [], route: [], options: [], when: [], ...extra
+  id, name, days: 0, price: "", months: "", photos: 0, video: false, youtube: "", pitch: "", plan: [], route: [], options: [], when: [], ...extra
 });
 
 const RIDES = ["Motorbike, you ride", "Motorbike, your guide rides", "Minibus"];
@@ -76,7 +77,7 @@ const LOOPS = [
       route: [[3.59, 98.67, "Medan"], [3.55, 98.11, "Bukit Lawang"], [3.69, 98.07, "Tangkahan"], [3.19, 98.51, "Berastagi"], [2.92, 98.52, "Sipiso-piso waterfall"], [2.67, 98.87, "Samosir, Lake Toba"]]
     }),
     trip("sumatra-north-14", "North, snorkeling and jungle", {
-      days: 14, photos: 16, months: "May to Aug", options: RIDES,
+      days: 14, photos: 17, video: true, months: "May to Aug", options: RIDES,
       when: [["May to Aug", "Calm seas", "Sunny, calm weather in the Banyak Islands for snorkeling and island hopping, and drier trails at Ketambe."], ...TOBA_WHEN],
       pitch: "14 days, 13 nights. Snorkeling, jungle exploration and Lake Toba.",
       plan: ["Arrive in Medan, drive up to Berastagi", "Mount Sibayak sunrise hike, then Berastagi market", "Drive to Lake Toba, afternoon by the water", "Sidikalang and Kedabuhen waterfall", "Drive to Singkil", "Crocodile swamp by boat, then cross to Pulau Besar", "Snorkeling around Pulau Besar", "Island hopping in the Banyak Islands", "Boat back to Singkil, start the long drive inland", "Arrive in Ketambe", "Jungle trek in Ketambe", "Drive to the Karo highlands, Sinabung viewpoint hike outside the volcano's closed zone", "Telagah Sei Bingai", "Batu Katak, then back to Medan"],

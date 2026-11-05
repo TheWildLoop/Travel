@@ -98,6 +98,7 @@ dialog::backdrop { background: rgb(15 38 32 / 0.8); }
 .dlg-route .route { display: block; width: 100%; height: min(40vh, 18rem); }
 .strip { display: flex; gap: 0.5rem; overflow-x: auto; scroll-snap-type: x mandatory; }
 .strip img { flex: 0 0 85%; height: min(60vh, 28rem); object-fit: cover; scroll-snap-align: center; }
+.strip video { flex: 0 0 auto; height: min(60vh, 28rem); aspect-ratio: 9 / 16; background: var(--jungle); scroll-snap-align: center; }
 .facts { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; margin: 1rem 0; font-weight: 700; }
 .dlg-body p { margin-bottom: 1rem; max-width: 60ch; }
 .dlg-body iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; margin-bottom: 1rem; }

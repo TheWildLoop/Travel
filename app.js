@@ -92,7 +92,7 @@ function openTrip(id) {
   const name = label(t), ph = photos(t), link = wa(`Hi, I’m interested in the ${name} loop.`), art = sketch(t.route, "route");
   $("#trip-body").innerHTML = `
     <div class="dlg-head"><h3>${esc(name)}</h3><button class="btn ghost" data-close>Close</button></div>
-    ${ph.length ? `<div class="strip">${ph.map((p, i) => `<img src="${p}" alt="${esc(name)} photo ${i + 1}" loading="lazy" onerror="this.remove()">`).join("")}</div>` : art && `<div class="dlg-route">${art}</div>`}
+    ${ph.length || t.video ? `<div class="strip">${t.video ? `<video src="img/${t.island.id}/${t.id}.mp4" autoplay muted loop playsinline controls aria-label="${esc(name)} video"></video>` : ""}${ph.map((p, i) => `<img src="${p}" alt="${esc(name)} photo ${i + 1}" loading="lazy" onerror="this.remove()">`).join("")}</div>` : art && `<div class="dlg-route">${art}</div>`}
     ${facts(t).length ? `<div class="facts">${facts(t).map(f => `<span>${esc(f)}</span>`).join("")}</div>` : ""}
     ${t.pitch ? `<p>${esc(t.pitch)}</p>` : ""}
     ${t.youtube ? `<iframe src="https://www.youtube-nocookie.com/embed/${esc(t.youtube)}" title="${esc(name)} video" loading="lazy" allowfullscreen></iframe>` : ""}
