@@ -79,7 +79,7 @@ const LOOPS = [
       days: 14, months: "May to Aug", options: RIDES,
       when: [["May to Aug", "Calm seas", "Sunny, calm weather in the Banyak Islands for snorkeling and island hopping, and drier trails at Ketambe."], ...TOBA_WHEN],
       pitch: "14 days, 13 nights. Snorkeling, jungle exploration and Lake Toba.",
-      plan: ["Medan, Berastagi market and Mount Sibayak", "Lake Toba", "Sidikalang and Kedabuhen waterfall", "Singkil crocodile swamp", "Pulau Besar snorkeling", "Ketambe jungle", "Sinabung hike, Telagah Sei Bingai, Batu Katak, then back to Medan"],
+      plan: ["Arrive in Medan, drive up to Berastagi", "Mount Sibayak sunrise hike, then Berastagi market", "Drive to Lake Toba, afternoon by the water", "Sidikalang and Kedabuhen waterfall", "Drive to Singkil", "Crocodile swamp by boat, then cross to Pulau Besar", "Snorkeling around Pulau Besar", "Island hopping in the Banyak Islands", "Boat back to Singkil, start the long drive inland", "Arrive in Ketambe", "Jungle trek in Ketambe", "Drive to the Karo highlands, Sinabung viewpoint hike outside the volcano's closed zone", "Telagah Sei Bingai", "Batu Katak, then back to Medan"],
       route: [[3.59, 98.67, "Medan"], [3.19, 98.51, "Berastagi"], [3.23, 98.51, "Mount Sibayak"], [2.67, 98.87, "Lake Toba"], [2.75, 98.32, "Sidikalang"], [2.65, 98.15, "Kedabuhen waterfall"], [2.29, 97.8, "Singkil"], [2.22, 97.35, "Pulau Besar"], [3.69, 97.65, "Ketambe"], [3.17, 98.39, "Mount Sinabung"], [3.46, 98.3, "Telagah Sei Bingai"], [3.55, 98.13, "Batu Katak"], [3.59, 98.67, "Medan"]]
     }),
     trip("sumatra-south", "South", {
